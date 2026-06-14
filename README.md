@@ -10,6 +10,11 @@ Audio playback in the browser
 
 Responsive UI with custom CSS styling
 
+## Screenshot
+![Application Screenshot](text_to_speech.png)
+
+
+
 ## Tech Stack
 Python
 
