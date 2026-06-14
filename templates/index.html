@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text to Speech</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Mini Text-to-Speech Web App</h1>
+    <form method="POST">
+        <textarea name="text" rows="5" cols="40" placeholder="Enter text here"></textarea><br>
+        <button type="submit">Convert to Speech</button>
+    </form>
+
+    {% if audio_file %}
+<h3>Listen to your speech:</h3>
+<audio controls>
+    <source src="{{ audio_file }}" type="audio/mpeg">
+</audio>
+{% endif %}
+</body>
+</html>
